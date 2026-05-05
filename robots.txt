@@ -1,0 +1,5 @@
+# robots.txt for claudineai.com
+User-agent: *
+Allow: /
+
+Sitemap: https://claudineai.com/sitemap.xml
