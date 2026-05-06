@@ -79,7 +79,7 @@
       {
         "@type": "Course",
         "name": "The AI Advantage: 60-Minute Workshop",
-        "description": "In 60 minutes, you'll know exactly where to start with AI. Live demo, the RCTF prompt formula, and one clear action to take this week.",
+        "description": "In 60 minutes, you'll know exactly where to start with AI. Live demo, the RCTF Formula, and one clear action to take this week.",
         "provider": { "@id": "https://claudineai.com/#organization" },
         "educationalLevel": "Beginner",
         "courseMode": ["onsite", "online"],
@@ -568,6 +568,84 @@
     /* ── DIVIDER ── */
     .gold-bar { height: 4px; background: var(--gold); }
 
+    /* ── MAILERLITE EMBED OVERRIDES ── */
+    .ml-embedded { width: 100% !important; }
+    .ml-embedded .ml-form-embedWrapper {
+      background: transparent !important;
+      border: none !important;
+      box-shadow: none !important;
+      max-width: 100% !important;
+      width: 100% !important;
+    }
+    .ml-embedded .ml-form-embedWrapper.embedDefault,
+    .ml-embedded .ml-form-embedWrapper.embedForm {
+      max-width: 100% !important;
+      width: 100% !important;
+    }
+    .ml-embedded .ml-form-embedBody { padding: 0 !important; }
+    .ml-embedded .ml-form-embedContent { display: none !important; }
+    .ml-embedded .ml-form-fieldRow input[type="email"] {
+      padding: 14px 18px !important;
+      border-radius: 8px !important;
+      border: 1.5px solid #E4E9F2 !important;
+      font-size: 15px !important;
+      font-family: 'Inter', sans-serif !important;
+      color: #1C2B4A !important;
+      width: 100% !important;
+      background: #fff !important;
+      margin-bottom: 10px !important;
+      box-sizing: border-box !important;
+    }
+    .ml-embedded .ml-form-embedSubmit button.primary {
+      padding: 14px 20px !important;
+      border-radius: 8px !important;
+      background: #E8A020 !important;
+      color: #0F2347 !important;
+      font-weight: 700 !important;
+      font-size: 15px !important;
+      border: none !important;
+      cursor: pointer !important;
+      font-family: 'Inter', sans-serif !important;
+      width: 100% !important;
+      transition: background .15s !important;
+      text-transform: none !important;
+      letter-spacing: normal !important;
+    }
+    .ml-embedded .ml-form-embedSubmit button.primary:hover {
+      background: #F5BD50 !important;
+    }
+    .ml-embedded .ml-form-successBody { padding: 16px 0 !important; }
+    .ml-embedded .ml-form-successContent h4 {
+      font-family: 'Inter', sans-serif !important;
+      font-size: 18px !important;
+      font-weight: 700 !important;
+      color: #0F2347 !important;
+      text-align: center !important;
+    }
+    .ml-embedded .ml-form-successContent p {
+      font-family: 'Inter', sans-serif !important;
+      color: #5E7298 !important;
+      text-align: center !important;
+    }
+    /* CTA section overrides (gold background) */
+    .cta-section .ml-embedded .ml-form-fieldRow input[type="email"] {
+      background: rgba(15,35,71,.1) !important;
+      border: none !important;
+      color: #0F2347 !important;
+    }
+    .cta-section .ml-embedded .ml-form-fieldRow input[type="email"]::placeholder {
+      color: rgba(15,35,71,.45) !important;
+    }
+    .cta-section .ml-embedded .ml-form-embedSubmit button.primary {
+      background: #0F2347 !important;
+      color: #fff !important;
+    }
+    .cta-section .ml-embedded .ml-form-embedSubmit button.primary:hover {
+      background: #1B3A6B !important;
+    }
+    .cta-section .ml-embedded .ml-form-successContent h4 { color: #0F2347 !important; }
+    .cta-section .ml-embedded .ml-form-successContent p { color: rgba(15,35,71,.65) !important; }
+
     /* ── RESPONSIVE ── */
     @media (max-width: 900px) {
       .hero-inner     { grid-template-columns: 1fr; }
@@ -602,7 +680,7 @@
         <li><a href="#how">How it works</a></li>
         <li><a href="#who">Who it's for</a></li>
         <li><a href="#offerings">Sessions</a></li>
-        <li><a href="#courses">Free Lesson</a></li>
+        <li><a href="#courses">Free Formula</a></li>
         <li><a href="#about">About</a></li>
       </ul>
       <a href="#join" class="nav-cta">Start Free →</a>
@@ -796,7 +874,7 @@
               </li>
               <li style="display:flex;gap:12px;align-items:flex-start;">
                 <span style="color:var(--gold);font-weight:800;font-size:15px;margin-top:1px;flex-shrink:0;">✓</span>
-                <span style="font-size:15px;color:var(--text);line-height:1.5;"><strong>The RCTF prompt formula:</strong> the one tool that turns AI from confusing to useful, starting today.</span>
+                <span style="font-size:15px;color:var(--text);line-height:1.5;"><strong>The RCTF Formula:</strong> the one tool that turns AI from confusing to useful, starting today.</span>
               </li>
               <li style="display:flex;gap:12px;align-items:flex-start;">
                 <span style="color:var(--gold);font-weight:800;font-size:15px;margin-top:1px;flex-shrink:0;">✓</span>
@@ -930,7 +1008,7 @@
     <div class="container">
       <div class="section-head">
         <span class="tag">Free Resource</span>
-        <h2>Your first lesson: the RCTF Formula</h2>
+        <h2>Your first lesson: the The Ultimate AI Prompting Formula</h2>
         <p>One formula that turns vague AI answers into exactly what you need. Enter your email and it lands in your inbox instantly.</p>
       </div>
 
@@ -941,7 +1019,7 @@
         <div class="rctf-banner" style="background:linear-gradient(135deg,var(--navy-dark),var(--navy-mid)); padding:40px 48px; display:flex; align-items:center; gap:40px; flex-wrap:wrap;">
           <div style="flex:1; min-width:220px;">
             <span style="background:var(--gold);color:var(--navy-dark);font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;padding:4px 12px;border-radius:99px;">Free · Instant Download</span>
-            <h3 style="color:#fff;font-size:28px;font-weight:900;letter-spacing:-0.5px;margin:14px 0 10px;line-height:1.15;">The RCTF Prompt Formula</h3>
+            <h3 style="color:#fff;font-size:28px;font-weight:900;letter-spacing:-0.5px;margin:14px 0 10px;line-height:1.15;">The RCTF Formula</h3>
             <p style="color:rgba(255,255,255,.65);font-size:15px;line-height:1.6;margin:0;">The one-page cheat sheet that shows you exactly how to talk to AI, so it gives you useful answers, every time.</p>
           </div>
           <!-- formula preview boxes -->
@@ -972,7 +1050,7 @@
             <ul style="list-style:none;display:flex;flex-direction:column;gap:10px;">
               <li style="display:flex;gap:10px;align-items:flex-start;font-size:14px;color:var(--text);">
                 <span style="color:var(--gold);font-weight:700;margin-top:1px;">→</span>
-                The 4-part RCTF formula explained in plain English
+                The 4-part RCTF Formula explained in plain English
               </li>
               <li style="display:flex;gap:10px;align-items:flex-start;font-size:14px;color:var(--text);">
                 <span style="color:var(--gold);font-weight:700;margin-top:1px;">→</span>
@@ -986,20 +1064,7 @@
           </div>
           <!-- inline signup -->
           <div style="flex:1;min-width:240px;">
-            <form name="rctf-signup" method="POST" data-netlify="true" netlify-honeypot="bot-field"
-              action="/thank-you.html"
-              style="display:flex;flex-direction:column;gap:10px;">
-              <input type="hidden" name="form-name" value="rctf-signup" />
-              <input type="hidden" name="bot-field" />
-              <input type="email" name="email" placeholder="your@email.com" required
-                style="padding:14px 18px;border-radius:8px;border:1.5px solid var(--gray);font-size:15px;font-family:inherit;color:var(--navy-dark);outline:none;transition:border-color .15s;"
-                onfocus="this.style.borderColor='var(--navy)'" onblur="this.style.borderColor='var(--gray)'" />
-              <button type="submit"
-                style="padding:14px 20px;border-radius:8px;background:var(--gold);color:var(--navy-dark);font-weight:700;font-size:15px;border:none;cursor:pointer;font-family:inherit;transition:background .15s;">
-                Send My Free Lesson →
-              </button>
-              <p style="font-size:12px;color:var(--muted);text-align:center;margin:0;">No spam. No credit card. Unsubscribe anytime.</p>
-            </form>
+            <div class="ml-embedded" data-form="71RyQ2"></div>
           </div>
         </div>
 
@@ -1091,14 +1156,9 @@
   <!-- ─── CTA ─── -->
   <section class="cta-section" id="join">
     <div class="container">
-      <h2>Get the RCTF Formula. Free.</h2>
+      <h2>Get the The Ultimate AI Prompting Formula. Free.</h2>
       <p>Enter your email. Get the one-page cheat sheet that makes AI actually work for you. That's it.</p>
-      <form class="email-form" name="rctf-signup-cta" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/thank-you.html">
-        <input type="hidden" name="form-name" value="rctf-signup-cta" />
-        <input type="hidden" name="bot-field" />
-        <input type="email" name="email" placeholder="your@email.com" required />
-        <button type="submit">Send My Free Lesson →</button>
-      </form>
+      <div class="ml-embedded" data-form="71RyQ2"></div>
       <p style="margin-top:16px;font-size:13px;color:rgba(255,255,255,.35);">No spam. No credit card. Unsubscribe anytime.</p>
     </div>
   </section>
