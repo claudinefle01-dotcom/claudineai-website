@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI for Business Blog | ClaudineAI – Practical AI Tips, No Jargon</title>
+  <meta name="description" content="Practical AI tips for small business owners, teams, and professionals. No jargon. No coding. Just real things you can try today. From Claudine Fle, AI educator in St. Petersburg, FL." />
+  <link rel="canonical" href="https://claudineai.com/blog.html" />
+  <meta property="og:title" content="AI for Business Blog | ClaudineAI" />
+  <meta property="og:description" content="Practical AI tips for business owners and teams. No jargon, no coding. Real skills you can use today." />
+  <meta property="og:url" content="https://claudineai.com/blog.html" />
+  <meta property="og:image" content="https://claudineai.com/claudine_photo.png" />
+  <link rel="icon" type="image/png" href="/claudine_photo.png" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Blog",
+    "name": "ClaudineAI Blog – AI for Business",
+    "description": "Practical AI tips and guides for small business owners and teams. Written by Claudine Fle, AI educator and speaker based in St. Petersburg, FL.",
+    "url": "https://claudineai.com/blog.html",
+    "publisher": {
+      "@type": "Person",
+      "name": "Claudine Fle",
+      "url": "https://claudineai.com/"
+    }
+  }
+  </script>
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: 'Inter', sans-serif; background: #F5F7FA; color: #1C2B4A; line-height: 1.7; }
+    :root {
+      --navy: #1a4a8a; --navy-dark: #0d2d5e; --navy-mid: #1e5fa8;
+      --gold: #f7a800; --gold-light: #f9c54e; --gold-pale: #FDF3DC;
+      --gray: #E4E9F2; --muted: #5E7298; --offwhite: #F5F7FA;
+    }
+    .container { max-width: 1100px; margin: 0 auto; padding: 0 28px; }
+    nav { position: sticky; top: 0; z-index: 100; background: var(--navy-dark); border-bottom: 1px solid rgba(255,255,255,.08); padding: 16px 0; }
+    nav .inner { display: flex; align-items: center; justify-content: space-between; }
+    .logo { font-size: 22px; font-weight: 900; color: #fff; text-decoration: none; letter-spacing: -.5px; }
+    .logo span { color: var(--gold); }
+    nav ul { display: flex; gap: 32px; list-style: none; }
+    nav ul a { color: rgba(255,255,255,.65); text-decoration: none; font-weight: 500; font-size: 15px; }
+    nav ul a:hover { color: var(--gold); }
+    .nav-cta { background: var(--gold); color: var(--navy-dark); padding: 10px 22px; border-radius: 8px; font-weight: 700; font-size: 14px; text-decoration: none; }
+    .gold-bar { height: 4px; background: var(--gold); }
+    .page-hero { background: linear-gradient(160deg, var(--navy-dark) 0%, var(--navy) 100%); padding: 64px 0 56px; }
+    .page-hero h1 { font-size: clamp(30px, 4vw, 48px); font-weight: 900; color: #fff; letter-spacing: -1.5px; margin-bottom: 12px; }
+    .page-hero p { font-size: 18px; color: rgba(255,255,255,.65); max-width: 500px; }
+    .tag { display: inline-block; background: rgba(232,160,32,.15); color: var(--gold-light); border: 1px solid rgba(232,160,32,.3); font-size: 12px; font-weight: 700; letter-spacing: .07em; text-transform: uppercase; padding: 5px 14px; border-radius: 99px; margin-bottom: 14px; }
+    .blog-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 28px; padding: 72px 0; }
+    .post-card { background: #fff; border: 1px solid var(--gray); border-radius: 16px; overflow: hidden; text-decoration: none; display: block; transition: transform .2s, box-shadow .2s; }
+    .post-card:hover { transform: translateY(-4px); box-shadow: 0 12px 36px rgba(27,58,107,.12); }
+    .post-thumb { height: 180px; background: linear-gradient(135deg, var(--navy-dark), var(--navy-mid)); display: flex; align-items: center; justify-content: center; font-size: 52px; position: relative; }
+    .post-cat { position: absolute; top: 14px; left: 14px; background: var(--gold); color: var(--navy-dark); font-size: 11px; font-weight: 700; padding: 3px 10px; border-radius: 99px; }
+    .post-body { padding: 24px; }
+    .post-date { font-size: 12px; color: var(--muted); margin-bottom: 8px; }
+    .post-body h2 { font-size: 19px; font-weight: 800; color: var(--navy-dark); line-height: 1.3; margin-bottom: 10px; }
+    .post-body p { font-size: 14px; color: var(--muted); line-height: 1.65; margin-bottom: 16px; }
+    .read-more { font-size: 13px; font-weight: 700; color: var(--navy); display: flex; align-items: center; gap: 6px; }
+    .cta-strip { background: linear-gradient(135deg, var(--gold) 0%, var(--gold-light) 100%); padding: 64px 0; text-align: center; }
+    .cta-strip h2 { font-size: clamp(24px, 3.5vw, 40px); font-weight: 900; color: var(--navy-dark); letter-spacing: -1px; margin-bottom: 12px; }
+    .cta-strip p { color: rgba(15,35,71,.65); font-size: 17px; margin-bottom: 28px; }
+    .cta-strip a { display: inline-block; background: var(--navy-dark); color: #fff; font-weight: 700; font-size: 15px; padding: 14px 32px; border-radius: 8px; text-decoration: none; }
+    footer { padding: 40px 0 28px; background: var(--navy-dark); }
+    footer .inner { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 16px; }
+    footer p { color: rgba(255,255,255,.3); font-size: 14px; }
+    footer nav ul { display: flex; gap: 24px; list-style: none; }
+    footer nav ul a { color: rgba(255,255,255,.4); font-size: 14px; text-decoration: none; }
+    footer nav ul a:hover { color: var(--gold); }
+    @media (max-width: 700px) { .blog-grid { grid-template-columns: 1fr; } nav ul { display: none; } }
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="container inner">
+      <a href="/" class="logo"><img src="/logo.png" alt="ClaudineAI" style="height:38px;width:auto;display:block;" onerror="this.style.display='none';this.nextSibling.style.display='inline'"/><span style="display:none;">Claudine<span style="color:var(--gold);">AI</span></span></a>
+      <ul>
+        <li><a href="/#how">How it works</a></li>
+        <li><a href="/workshops.html">Workshops</a></li>
+        <li><a href="/blog.html">Blog</a></li>
+        <li><a href="/reviews.html">Reviews</a></li>
+      </ul>
+      <a href="/contact.html" class="nav-cta">Book a Workshop →</a>
+    </div>
+  </nav>
+  <div class="gold-bar"></div>
+
+  <div class="page-hero">
+    <div class="container">
+      <span class="tag">AI for Business</span>
+      <h1>Practical AI. No jargon.</h1>
+      <p>Real tips you can use today — for small business owners, teams, and professionals who don't have time for fluff.</p>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="blog-grid">
+
+      <a href="/ai-workshops-tampa-bay.html" class="post-card">
+        <div class="post-thumb">
+          🏙️
+          <span class="post-cat">Local</span>
+        </div>
+        <div class="post-body">
+          <p class="post-date">June 2026</p>
+          <h2>AI Workshops in Tampa Bay: What to Expect and How to Get Started</h2>
+          <p>Looking for practical AI training in St. Petersburg or Tampa? Here's what a good AI workshop actually covers — and what to avoid.</p>
+          <span class="read-more">Read the post →</span>
+        </div>
+      </a>
+
+      <a href="/rctf-prompt-formula.html" class="post-card">
+        <div class="post-thumb">
+          📝
+          <span class="post-cat">Prompting</span>
+        </div>
+        <div class="post-body">
+          <p class="post-date">June 2026</p>
+          <h2>The RCTF Prompt Formula: Stop Getting Useless AI Answers</h2>
+          <p>One four-part formula that changes everything about how you talk to AI. Here's exactly how it works and how to use it today.</p>
+          <span class="read-more">Read the post →</span>
+        </div>
+      </a>
+
+      <a href="/ai-for-small-business.html" class="post-card">
+        <div class="post-thumb">
+          💼
+          <span class="post-cat">Small Business</span>
+        </div>
+        <div class="post-body">
+          <p class="post-date">June 2026</p>
+          <h2>AI for Small Business Owners: What Actually Works in 2026</h2>
+          <p>Not a list of 50 tools. The three things small business owners are doing with AI right now that actually save time and win clients.</p>
+          <span class="read-more">Read the post →</span>
+        </div>
+      </a>
+
+      <a href="/learn-ai-no-tech-background.html" class="post-card">
+        <div class="post-thumb">
+          🚀
+          <span class="post-cat">Getting Started</span>
+        </div>
+        <div class="post-body">
+          <p class="post-date">June 2026</p>
+          <h2>How to Learn AI With No Tech Background (And Why Most Courses Get It Wrong)</h2>
+          <p>Most AI courses start with the tools. That's why most people quit. Here's a different approach — and why it actually works.</p>
+          <span class="read-more">Read the post →</span>
+        </div>
+      </a>
+
+      <a href="/getting-left-behind-ai.html" class="post-card">
+        <div class="post-thumb">
+          ⏳
+          <span class="post-cat">Fear First</span>
+        </div>
+        <div class="post-body">
+          <p class="post-date">June 2026</p>
+          <h2>What Happens When You Get Left Behind in AI</h2>
+          <p>The cost of waiting isn't staying the same. It's falling further behind. Here's what that looks like — and how to stop it.</p>
+          <span class="read-more">Read the post →</span>
+        </div>
+      </a>
+
+    </div>
+  </div>
+
+  <div class="cta-strip">
+    <div class="container">
+      <h2>Want to learn this in person?</h2>
+      <p>Book a workshop for your team. Practical, live, and built around your actual work.</p>
+      <a href="/contact.html">Book a Workshop →</a>
+    </div>
+  </div>
+
+  <div class="gold-bar"></div>
+  <footer>
+    <div class="container inner">
+      <a href="/" class="logo"><img src="/logo.png" alt="ClaudineAI" style="height:38px;width:auto;display:block;" onerror="this.style.display='none';this.nextSibling.style.display='inline'"/><span style="display:none;">Claudine<span style="color:var(--gold);">AI</span></span></a>
+      <nav>
+        <ul>
+          <li><a href="/#courses">Free Lesson</a></li>
+          <li><a href="/workshops.html">Workshops</a></li>
+          <li><a href="/blog.html">Blog</a></li>
+          <li><a href="/reviews.html">Reviews</a></li>
+          <li><a href="/contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <p>© 2026 ClaudineAI · AI in plain language.</p>
+    </div>
+  </footer>
+</body>
+</html>
