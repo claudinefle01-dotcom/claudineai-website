@@ -6,24 +6,27 @@
 
   <!-- ── SEO META TAGS ── -->
   <title>ClaudineAI: AI in Plain Language. Results from Day One.</title>
-  <meta name="description" content="Claudine Fle teaches practical AI to small business owners, teams, and organizations in St. Petersburg, Florida and across Tampa Bay. No coding, no jargon. Live workshops and online lessons that deliver results from day one." />
-  <meta name="keywords" content="AI training for small business, AI workshops, beginner AI course, AI for business owners, AI speaker, Claudine Fle, St. Petersburg Florida, Tampa Bay AI training" />
+  <meta name="description" content="Claudine Fle teaches practical AI to small business owners, teams, and organizations: no coding, no jargon, no intimidation. Live workshops and online lessons that deliver results from day one." />
+  <meta name="keywords" content="AI training for small business, AI workshops, beginner AI course, AI for business owners, AI speaker, Claudine Fle" />
   <link rel="canonical" href="https://claudineai.com/" />
 
   <!-- ── FAVICON ── -->
-  <link rel="icon" type="image/png" href="./claudine_photo.png" />
-  <link rel="apple-touch-icon" href="./claudine_photo.png" />
+  <link rel="icon" type="image/png" href="/claudine_photo.png" />
+  <link rel="apple-touch-icon" href="/claudine_photo.png" />
 
   <!-- ── OPEN GRAPH (social previews) ── -->
   <meta property="og:type"        content="website" />
   <meta property="og:url"         content="https://claudineai.com/" />
   <meta property="og:title"       content="ClaudineAI: AI in Plain Language. Results from Day One." />
-  <meta property="og:description" content="Practical AI training for small business owners and teams in Tampa Bay and virtually nationwide. No coding, no jargon." />
+  <meta property="og:description" content="Practical AI training for small business owners and teams. No coding, no jargon. Live workshops and online lessons." />
   <meta property="og:image"       content="https://claudineai.com/claudine_photo.png" />
   <meta name="twitter:card"       content="summary_large_image" />
   <meta name="twitter:image"      content="https://claudineai.com/claudine_photo.png" />
 
-  <!-- ── GOOGLE ANALYTICS 4 ── -->
+  <!-- ── GOOGLE ANALYTICS 4 ──────────────────────────────────────
+       ACTION REQUIRED: Replace G-XXXXXXXXXX with your real GA4 Measurement ID.
+       Get it at: analytics.google.com → Admin → Data Streams → your stream
+  ─────────────────────────────────────────────────────────────── -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -32,7 +35,7 @@
     gtag('config', 'G-XXXXXXXXXX');
   </script>
 
-  <!-- ── JSON-LD STRUCTURED DATA ── -->
+  <!-- ── JSON-LD STRUCTURED DATA (helps Google understand who you are) ── -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -42,7 +45,7 @@
         "@id": "https://claudineai.com/#website",
         "url": "https://claudineai.com/",
         "name": "ClaudineAI",
-        "description": "Practical AI training for small business owners and teams in St. Petersburg, Florida and Tampa Bay. No coding, no jargon.",
+        "description": "Practical AI training for small business owners and teams. No coding, no jargon. Live workshops and online lessons.",
         "publisher": { "@id": "https://claudineai.com/#person" }
       },
       {
@@ -50,15 +53,9 @@
         "@id": "https://claudineai.com/#person",
         "name": "Claudine Fle",
         "jobTitle": "AI Speaker & Business Educator",
-        "description": "Claudine Fle teaches practical AI to small business owners, teams, and organizations in St. Petersburg, Florida and across Tampa Bay: no coding, no jargon, no intimidation.",
+        "description": "Claudine Fle teaches practical AI to small business owners, teams, and organizations: no coding, no jargon, no intimidation.",
         "url": "https://claudineai.com/",
         "image": "https://claudineai.com/claudine_photo.png",
-        "address": {
-          "@type": "PostalAddress",
-          "addressLocality": "St. Petersburg",
-          "addressRegion": "FL",
-          "addressCountry": "US"
-        },
         "alumniOf": {
           "@type": "CollegeOrUniversity",
           "name": "George Washington University"
@@ -72,19 +69,12 @@
         "url": "https://claudineai.com/",
         "logo": "https://claudineai.com/claudine_photo.png",
         "founder": { "@id": "https://claudineai.com/#person" },
-        "address": {
-          "@type": "PostalAddress",
-          "addressLocality": "St. Petersburg",
-          "addressRegion": "FL",
-          "addressCountry": "US"
-        },
-        "areaServed": ["St. Petersburg, FL", "Tampa Bay", "Florida", "United States"],
         "contactPoint": {
           "@type": "ContactPoint",
-          "email": "claudinefle01@gmail.com",
+          "email": "claudine@claudineai.com",
           "contactType": "customer support"
         },
-        "description": "Practical AI training for small business owners and teams in St. Petersburg, Florida and Tampa Bay."
+        "description": "Practical AI training for small business owners and teams."
       },
       {
         "@type": "Course",
@@ -112,23 +102,32 @@
       },
       {
         "@type": "LocalBusiness",
-        "@id": "https://claudineai.com/#business",
+        "@id": "https://claudineai.com/#localbusiness",
         "name": "ClaudineAI",
+        "description": "Practical AI training for small business owners, teams, and organizations in St. Petersburg, FL and virtually nationwide. No coding, no jargon.",
         "url": "https://claudineai.com/",
+        "email": "claudine@claudineai.com",
         "image": "https://claudineai.com/claudine_photo.png",
+        "founder": { "@id": "https://claudineai.com/#person" },
         "address": {
           "@type": "PostalAddress",
           "addressLocality": "St. Petersburg",
           "addressRegion": "FL",
           "addressCountry": "US"
         },
-        "areaServed": ["St. Petersburg, FL", "Tampa Bay", "Florida", "United States"],
-        "aggregateRating": {
-          "@type": "AggregateRating",
-          "ratingValue": "5",
-          "reviewCount": "7",
-          "bestRating": "5"
-        }
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": 27.7676,
+          "longitude": -82.6403
+        },
+        "areaServed": [
+          { "@type": "City", "name": "St. Petersburg" },
+          { "@type": "City", "name": "Tampa" },
+          { "@type": "AdministrativeArea", "name": "Tampa Bay" },
+          { "@type": "State", "name": "Florida" }
+        ],
+        "priceRange": "$$",
+        "serviceType": ["AI Workshops", "AI Training", "AI Speaking", "Business AI Education"]
       },
       {
         "@type": "FAQPage",
@@ -154,7 +153,7 @@
             "name": "Are ClaudineAI workshops available online or in person?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Both! ClaudineAI offers live workshops in-person in St. Petersburg, Florida and the Tampa Bay area, or virtually via video call, tailored to your team and industry."
+              "text": "Both! ClaudineAI offers live workshops in-person at your venue or virtually via video call, tailored to your team and industry."
             }
           }
         ]
@@ -187,11 +186,11 @@
 
     /* ── BRAND TOKENS ── */
     :root {
-      --navy:      #1B3A6B;
-      --navy-dark: #0F2347;
-      --navy-mid:  #24508C;
-      --gold:      #E8A020;
-      --gold-light:#F5BD50;
+      --navy:      #1a4a8a;
+      --navy-dark: #0d2d5e;
+      --navy-mid:  #1e5fa8;
+      --gold:      #f7a800;
+      --gold-light:#f9c54e;
       --gold-pale: #FDF3DC;
       --white:     #FFFFFF;
       --offwhite:  #F5F7FA;
@@ -270,7 +269,7 @@
     /* ── HERO ── */
     .hero {
       padding: 100px 0 80px;
-      background: linear-gradient(160deg, var(--navy-dark) 0%, var(--navy) 60%, #1E4F8C 100%);
+      background: linear-gradient(160deg, var(--navy-dark) 0%, var(--navy) 60%, #1e5fa8 100%);
       position: relative; overflow: hidden;
     }
     .hero::before {
@@ -327,7 +326,6 @@
     }
     .hero-card .photo-ring img {
       width: 100%; height: 100%; object-fit: cover; border-radius: 50%;
-      display: block;
     }
     .hero-card h3 {
       font-size: 20px; font-weight: 800; color: #fff;
@@ -393,7 +391,9 @@
     }
     .step h3 { font-size: 20px; font-weight: 700; color: var(--navy-dark); margin-bottom: 10px; }
     .step p  { color: var(--muted); font-size: 15px; }
-    .step-connector { display: none; }
+    .step-connector {
+      display: none;
+    }
 
     /* ── AUDIENCE ── */
     .audience { background: var(--offwhite); }
@@ -427,6 +427,50 @@
 
     /* ── COURSES ── */
     .courses { background: var(--white); }
+    .course-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 24px; }
+    .course-card {
+      border: 1px solid var(--gray);
+      border-radius: 16px; overflow: hidden;
+      background: #fff;
+      transition: transform .2s, box-shadow .2s, border-color .2s;
+    }
+    .course-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 12px 36px rgba(27,58,107,.10);
+      border-color: var(--navy);
+    }
+    .course-thumb {
+      height: 140px;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 48px; background: var(--navy);
+      position: relative;
+    }
+    .course-thumb.c1 { background: linear-gradient(135deg, #1a4a8a, #1e5fa8); }
+    .course-thumb.c2 { background: linear-gradient(135deg, #0d2d5e, #1a4a8a); }
+    .course-thumb.c3 { background: linear-gradient(135deg, #1e5fa8, #1a4a8a); }
+    .course-thumb.c4 { background: linear-gradient(135deg, #1e5fa8, #2A5FA0); }
+    .course-thumb.c5 { background: linear-gradient(135deg, #0d2d5e, #1e5fa8); }
+    .course-thumb.c6 { background: linear-gradient(135deg, #1a4a8a, #1e5fa8); }
+    .course-badge {
+      position: absolute; top: 12px; left: 12px;
+      background: var(--gold); color: var(--navy-dark);
+      font-size: 11px; font-weight: 700; padding: 3px 10px; border-radius: 99px;
+    }
+    .course-body { padding: 22px; }
+    .course-level { font-size: 11px; font-weight: 700; text-transform: uppercase;
+      letter-spacing: .08em; color: var(--muted); margin-bottom: 6px; }
+    .course-body h3 { font-size: 17px; font-weight: 700; color: var(--navy-dark); margin-bottom: 8px; }
+    .course-body p  { font-size: 14px; color: var(--muted); margin-bottom: 18px; }
+    .course-footer {
+      display: flex; align-items: center; justify-content: space-between; font-size: 13px; color: var(--muted);
+    }
+    .course-footer a {
+      background: var(--navy); color: #fff;
+      padding: 8px 18px; border-radius: 6px;
+      text-decoration: none; font-weight: 600; font-size: 13px;
+      transition: background .15s;
+    }
+    .course-footer a:hover { background: var(--navy-mid); }
 
     /* ── ABOUT ── */
     .about { background: var(--offwhite); }
@@ -434,7 +478,9 @@
       display: grid; grid-template-columns: 380px 1fr;
       gap: 72px; align-items: center;
     }
-    .about-photo-wrap { position: relative; }
+    .about-photo-wrap {
+      position: relative;
+    }
     .about-photo {
       width: 100%;
       aspect-ratio: 4/5;
@@ -444,7 +490,8 @@
       border: 3px solid var(--gold);
       display: flex; align-items: center; justify-content: center;
     }
-    .about-photo img { width: 100%; height: 100%; object-fit: cover; display: block; }
+    .about-photo img { width: 100%; height: 100%; object-fit: cover; }
+    .about-photo-fallback { font-size: 96px; }
     .about-accent {
       position: absolute; bottom: -16px; right: -16px;
       background: var(--gold); color: var(--navy-dark);
@@ -499,7 +546,7 @@
     /* ── EMAIL CTA ── */
     .cta-section {
       padding: 96px 0;
-      background: linear-gradient(135deg, var(--gold) 0%, #F5BD50 100%);
+      background: linear-gradient(135deg, var(--gold) 0%, #f9c54e 100%);
       text-align: center;
     }
     .cta-section h2 {
@@ -579,16 +626,17 @@
   <!-- ─── NAV ─── -->
   <nav>
     <div class="container inner">
-      <a href="#" class="logo">Claudine<span>AI</span>.com</a>
+      <a href="/" class="logo"><img src="/logo.png" alt="ClaudineAI" style="height:38px;width:auto;display:block;" onerror="this.style.display='none';this.nextSibling.style.display='inline'"/><span style="display:none;">Claudine<span style="color:var(--gold);">AI</span></span></a>
       <ul>
         <li><a href="#how">How it works</a></li>
         <li><a href="#who">Who it's for</a></li>
         <li><a href="#offerings">Sessions</a></li>
         <li><a href="#courses">Free Lesson</a></li>
         <li><a href="#about">About</a></li>
-        <li><a href="./reviews.html">Reviews</a></li>
+        <li><a href="/reviews.html">Reviews</a></li>
+        <li><a href="/blog/">Blog</a></li>
       </ul>
-      <a href="#join" class="nav-cta">Start Free →</a>
+      <a href="/contact.html" class="nav-cta">Book a Workshop →</a>
     </div>
   </nav>
   <div class="gold-bar"></div>
@@ -611,32 +659,31 @@
           <span class="badge">Start Where You Are</span>
           <span class="badge">Live Demos</span>
           <span class="badge">Day-One Results</span>
-          <span class="badge">📍 St. Petersburg, FL · Tampa Bay &amp; Virtual Nationwide</span>
         </div>
       </div>
 
       <div class="hero-card">
         <div class="photo-ring">
-          <img src="./claudine_photo.png" alt="Claudine Fle, AI Speaker and Business Educator" />
+          <img src="claudine_photo.png" alt="Claudine" onerror="this.parentElement.innerHTML='👩‍💼'" />
         </div>
         <h3>Claudine Fle</h3>
         <p class="subtitle">AI Speaker · Business Educator · MBA, GWU</p>
         <div class="hero-stats">
           <div class="stat-box">
-            <div class="num">25+</div>
-            <div class="label">Years in Business</div>
+            <div class="num">7,000+</div>
+            <div class="label">Professionals Taught</div>
           </div>
           <div class="stat-box">
-            <div class="num">100%</div>
-            <div class="label">Beginner-Focused</div>
+            <div class="num">500+</div>
+            <div class="label">Workshops Delivered</div>
           </div>
           <div class="stat-box">
-            <div class="num">0</div>
-            <div class="label">Coding Required</div>
+            <div class="num">5.0 ★</div>
+            <div class="label">Google Rating</div>
           </div>
           <div class="stat-box">
             <div class="num">Day 1</div>
-            <div class="label">Start Using AI</div>
+            <div class="label">Results From Day One</div>
           </div>
         </div>
       </div>
@@ -744,6 +791,30 @@
     </div>
   </section>
 
+  <!-- ─── SOCIAL PROOF BAR ─── -->
+  <section style="padding:48px 0; background:var(--offwhite); border-top:1px solid var(--gray); border-bottom:1px solid var(--gray);">
+    <div class="container">
+      <div style="display:grid; grid-template-columns:repeat(4,1fr); gap:24px; text-align:center;">
+        <div>
+          <div style="font-size:36px;font-weight:900;color:var(--navy-dark);letter-spacing:-1px;">7,000+</div>
+          <div style="font-size:14px;color:var(--muted);font-weight:500;margin-top:4px;">Professionals Taught</div>
+        </div>
+        <div>
+          <div style="font-size:36px;font-weight:900;color:var(--navy-dark);letter-spacing:-1px;">500+</div>
+          <div style="font-size:14px;color:var(--muted);font-weight:500;margin-top:4px;">Workshops Delivered</div>
+        </div>
+        <div>
+          <div style="font-size:36px;font-weight:900;color:var(--gold);letter-spacing:-1px;">5.0 ★</div>
+          <div style="font-size:14px;color:var(--muted);font-weight:500;margin-top:4px;">Google Rating</div>
+        </div>
+        <div>
+          <div style="font-size:36px;font-weight:900;color:var(--navy-dark);letter-spacing:-1px;">40</div>
+          <div style="font-size:14px;color:var(--muted);font-weight:500;margin-top:4px;">Emails in 15 Minutes</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- ─── OFFERINGS ─── -->
   <section style="padding:96px 0; background:#fff;" id="offerings">
     <div class="container">
@@ -754,10 +825,13 @@
         <p>No tech background. No homework. No fluff. Just practical AI skills you can use the same day.</p>
       </div>
 
-      <div class="offering-grid" style="display:grid; grid-template-columns:1fr 1fr; gap:28px; align-items:start;">
+      <!-- OFFERING CARDS WRAPPER -->
+      <div class="offering-grid" style="display:grid; grid-template-columns:1fr 1fr 1fr; gap:28px; align-items:start;">
 
-        <!-- CARD 1: 60-MIN SESSION -->
+        <!-- ── CARD 1: 60-MIN SESSION ── -->
         <div style="border:1px solid var(--gray); border-radius:20px; overflow:hidden; background:#fff; box-shadow:0 4px 24px rgba(27,58,107,.07); transition:box-shadow .2s;">
+
+          <!-- header -->
           <div style="background:linear-gradient(135deg,var(--navy-dark),var(--navy)); padding:32px 36px;">
             <div style="display:flex; align-items:center; justify-content:space-between; margin-bottom:16px; flex-wrap:wrap; gap:10px;">
               <span style="background:var(--gold);color:var(--navy-dark);font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;padding:4px 14px;border-radius:99px;">1 Hour · Live Demo · Any Venue</span>
@@ -766,6 +840,8 @@
             <h3 style="color:#fff;font-size:26px;font-weight:900;letter-spacing:-.5px;line-height:1.15;margin-bottom:10px;">In 60 minutes, you'll know<br/>exactly where to start.</h3>
             <p style="color:rgba(255,255,255,.6);font-size:14px;line-height:1.65;margin:0;">Perfect for chambers of commerce, business events, and teams who want a fast, practical introduction, with live demos and zero jargon.</p>
           </div>
+
+          <!-- outcomes -->
           <div style="padding:28px 36px 0;">
             <p style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);margin-bottom:16px;">You'll walk away with:</p>
             <ul style="list-style:none;display:flex;flex-direction:column;gap:13px;">
@@ -791,6 +867,8 @@
               </li>
             </ul>
           </div>
+
+          <!-- audience tags -->
           <div style="padding:20px 36px 0; display:flex; flex-wrap:wrap; gap:8px;">
             <span style="background:var(--offwhite);border:1px solid var(--gray);color:var(--muted);font-size:12px;font-weight:600;padding:4px 12px;border-radius:99px;">Small Business Owners</span>
             <span style="background:var(--offwhite);border:1px solid var(--gray);color:var(--muted);font-size:12px;font-weight:600;padding:4px 12px;border-radius:99px;">Chamber Members</span>
@@ -800,18 +878,22 @@
             <span style="background:var(--offwhite);border:1px solid var(--gray);color:var(--muted);font-size:12px;font-weight:600;padding:4px 12px;border-radius:99px;">Writers</span>
             <span style="background:var(--offwhite);border:1px solid var(--gray);color:var(--muted);font-size:12px;font-weight:600;padding:4px 12px;border-radius:99px;">Speakers</span>
           </div>
+
+          <!-- CTA -->
           <div style="padding:28px 36px 36px;">
-            <a href="mailto:claudinefle01@gmail.com?subject=Reserve My Seat: The AI Advantage"
+            <a href="https://calendly.com/claudinefle01/30min" target="_blank" rel="noopener"
                style="display:block;text-align:center;background:var(--navy);color:#fff;font-weight:700;font-size:16px;padding:16px 24px;border-radius:10px;text-decoration:none;transition:background .15s;"
                onmouseover="this.style.background='var(--navy-mid)'" onmouseout="this.style.background='var(--navy)'">
-              Reserve My Seat →
+              Book a Discovery Call →
             </a>
-            <p style="text-align:center;font-size:12px;color:var(--muted);margin-top:10px;">Available in-person or virtual · Book for your organization</p>
+            <p style="text-align:center;font-size:12px;color:var(--muted);margin-top:10px;">Free 15-min call · In-person or virtual · Any venue</p>
           </div>
         </div>
 
-        <!-- CARD 2: 4-HR COURSE -->
+        <!-- ── CARD 2: 4-HR COURSE ── -->
         <div style="border:2px solid var(--gold);border-radius:20px;overflow:hidden;background:#fff;box-shadow:0 4px 24px rgba(232,160,32,.15);">
+
+          <!-- header -->
           <div style="background:var(--gold);padding:8px 36px;display:flex;align-items:center;justify-content:center;">
             <span style="font-size:12px;font-weight:700;color:var(--navy-dark);letter-spacing:.06em;text-transform:uppercase;">Most Popular · Full Team Training</span>
           </div>
@@ -823,6 +905,8 @@
             <h3 style="color:#fff;font-size:26px;font-weight:900;letter-spacing:-.5px;line-height:1.15;margin-bottom:10px;">Go from "I don't get AI"<br/>to "I use this every day."</h3>
             <p style="color:rgba(255,255,255,.6);font-size:14px;line-height:1.65;margin:0;">Four focused hours (or a one-hour power session) that take your team from overwhelmed to confident. Customized for your industry, your tools, your goals.</p>
           </div>
+
+          <!-- outcomes -->
           <div style="padding:28px 36px 0;">
             <p style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);margin-bottom:16px;">Across 4 hours, you'll learn how to:</p>
             <ul style="list-style:none;display:flex;flex-direction:column;gap:13px;">
@@ -852,6 +936,8 @@
               </li>
             </ul>
           </div>
+
+          <!-- stats strip -->
           <div class="stats-strip" style="margin:24px 36px 0;background:var(--offwhite);border-radius:12px;padding:18px 24px;display:grid;grid-template-columns:repeat(4,1fr);gap:8px;text-align:center;">
             <div>
               <div style="font-size:22px;font-weight:900;color:var(--gold);line-height:1;">40</div>
@@ -870,23 +956,82 @@
               <div style="font-size:11px;color:var(--muted);margin-top:3px;line-height:1.3;">Results you use<br/>immediately</div>
             </div>
           </div>
+
+          <!-- audience tags -->
           <div style="padding:20px 36px 0;display:flex;flex-wrap:wrap;gap:8px;">
             <span style="background:var(--gold-pale);border:1px solid var(--gold-light);color:var(--navy-dark);font-size:12px;font-weight:600;padding:4px 12px;border-radius:99px;">Business Teams</span>
             <span style="background:var(--gold-pale);border:1px solid var(--gold-light);color:var(--navy-dark);font-size:12px;font-weight:600;padding:4px 12px;border-radius:99px;">Non-Profits</span>
             <span style="background:var(--gold-pale);border:1px solid var(--gold-light);color:var(--navy-dark);font-size:12px;font-weight:600;padding:4px 12px;border-radius:99px;">Office Managers</span>
             <span style="background:var(--gold-pale);border:1px solid var(--gold-light);color:var(--navy-dark);font-size:12px;font-weight:600;padding:4px 12px;border-radius:99px;">Chamber Events</span>
           </div>
+
+          <!-- CTA -->
           <div style="padding:28px 36px 36px;">
-            <a href="mailto:claudinefle01@gmail.com?subject=Bring This to My Team: AI Without the Tech Headache"
+            <a href="https://calendly.com/claudinefle01/30min" target="_blank" rel="noopener"
                style="display:block;text-align:center;background:var(--gold);color:var(--navy-dark);font-weight:700;font-size:16px;padding:16px 24px;border-radius:10px;text-decoration:none;transition:background .15s;"
                onmouseover="this.style.background='var(--gold-light)'" onmouseout="this.style.background='var(--gold)'">
-              Bring This to My Team →
+              Book a Discovery Call →
             </a>
-            <p style="text-align:center;font-size:12px;color:var(--muted);margin-top:10px;">Full 4-hour series or 1-hour Lunch &amp; Learn · In-person or virtual</p>
+            <p style="text-align:center;font-size:12px;color:var(--muted);margin-top:10px;">Free 15-min call · Full 4-hour series or 1-hour Lunch &amp; Learn · In-person or virtual</p>
           </div>
         </div>
 
+        <!-- ── CARD 3: PRIVATE INTENSIVE ── -->
+        <div style="border:1px solid var(--gray); border-radius:20px; overflow:hidden; background:#fff; box-shadow:0 4px 24px rgba(27,58,107,.07);">
+          <div style="background:linear-gradient(135deg,#0d2d5e,#1a4a8a); padding:32px 36px;">
+            <div style="margin-bottom:16px;">
+              <span style="background:rgba(255,255,255,.15);color:#fff;font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;padding:4px 14px;border-radius:99px;">Private · 3 Hours · 1-on-1</span>
+            </div>
+            <h3 style="color:#fff;font-size:24px;font-weight:900;letter-spacing:-.5px;line-height:1.2;margin-bottom:10px;">Private AI Business Intensive</h3>
+            <p style="color:rgba(255,255,255,.6);font-size:14px;line-height:1.65;margin:0;">A private 3-hour working session built entirely around your business. You leave with a fully built system — not a plan to build one later.</p>
+          </div>
+          <div style="padding:28px 36px 0;">
+            <p style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);margin-bottom:14px;">You'll walk away with:</p>
+            <ul style="list-style:none;display:flex;flex-direction:column;gap:11px;">
+              <li style="display:flex;gap:10px;font-size:14px;color:var(--text);line-height:1.5;"><span style="color:var(--gold);font-weight:800;flex-shrink:0;">✓</span><span>Your <strong>AI Business Brain</strong> — a custom AI assistant built for your work</span></li>
+              <li style="display:flex;gap:10px;font-size:14px;color:var(--text);line-height:1.5;"><span style="color:var(--gold);font-weight:800;flex-shrink:0;">✓</span><span><strong>AI Reputation Audit</strong> — find out how AI sees your business online</span></li>
+              <li style="display:flex;gap:10px;font-size:14px;color:var(--text);line-height:1.5;"><span style="color:var(--gold);font-weight:800;flex-shrink:0;">✓</span><span><strong>Marketing content</strong> and email automation set up and working</span></li>
+              <li style="display:flex;gap:10px;font-size:14px;color:var(--text);line-height:1.5;"><span style="color:var(--gold);font-weight:800;flex-shrink:0;">✓</span><span>A <strong>custom prompt library</strong> tailored to your business tasks</span></li>
+            </ul>
+          </div>
+          <div style="padding:20px 36px 0;display:flex;flex-wrap:wrap;gap:8px;">
+            <span style="background:var(--offwhite);border:1px solid var(--gray);color:var(--muted);font-size:12px;font-weight:600;padding:4px 12px;border-radius:99px;">Business Owners</span>
+            <span style="background:var(--offwhite);border:1px solid var(--gray);color:var(--muted);font-size:12px;font-weight:600;padding:4px 12px;border-radius:99px;">Immediate Results</span>
+          </div>
+          <div style="padding:24px 36px 36px;">
+            <a href="https://calendly.com/claudinefle01/30min" target="_blank" rel="noopener"
+               style="display:block;text-align:center;background:var(--navy);color:#fff;font-weight:700;font-size:15px;padding:14px 24px;border-radius:10px;text-decoration:none;"
+               onmouseover="this.style.background='var(--navy-mid)'" onmouseout="this.style.background='var(--navy)'">
+              Book a Discovery Call →
+            </a>
+            <p style="text-align:center;font-size:12px;color:var(--muted);margin-top:10px;">Free 15-min call to get started</p>
+          </div>
+        </div>
+
+      </div><!-- end grid -->
+
+      <!-- ROW 2: AI Foundations -->
+      <div style="margin-top:28px; max-width:460px;">
+        <div style="border:1px solid var(--gray); border-radius:20px; overflow:hidden; background:#fff; box-shadow:0 4px 24px rgba(27,58,107,.07);">
+          <div style="background:linear-gradient(135deg,#1e5fa8,#1e5fa8); padding:28px 36px;">
+            <div style="margin-bottom:12px;">
+              <span style="background:rgba(255,255,255,.15);color:#fff;font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;padding:4px 14px;border-radius:99px;">Beginner-Friendly · Self-Paced</span>
+            </div>
+            <h3 style="color:#fff;font-size:22px;font-weight:900;letter-spacing:-.5px;line-height:1.2;margin-bottom:8px;">AI Foundations</h3>
+            <p style="color:rgba(255,255,255,.6);font-size:14px;line-height:1.6;margin:0;">Start with confidence. Built for people who are brand new to AI and want to get up and running fast — with no tech background at all.</p>
+          </div>
+          <div style="padding:24px 36px;">
+            <p style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);margin-bottom:12px;">You'll gain:</p>
+            <ul style="list-style:none;display:flex;flex-direction:column;gap:10px;margin-bottom:20px;">
+              <li style="display:flex;gap:10px;font-size:14px;color:var(--text);line-height:1.5;"><span style="color:var(--gold);font-weight:800;flex-shrink:0;">✓</span><span>The right AI tools for everyday business use</span></li>
+              <li style="display:flex;gap:10px;font-size:14px;color:var(--text);line-height:1.5;"><span style="color:var(--gold);font-weight:800;flex-shrink:0;">✓</span><span>Better prompts using the RCTF formula</span></li>
+              <li style="display:flex;gap:10px;font-size:14px;color:var(--text);line-height:1.5;"><span style="color:var(--gold);font-weight:800;flex-shrink:0;">✓</span><span>Confidence from day one — no jargon, no pressure</span></li>
+            </ul>
+            <a href="/#courses" style="display:block;text-align:center;background:var(--gold);color:var(--navy-dark);font-weight:700;font-size:15px;padding:13px 24px;border-radius:10px;text-decoration:none;">Start with the Free Lesson →</a>
+          </div>
+        </div>
       </div>
+
     </div>
   </section>
 
@@ -899,13 +1044,17 @@
         <p>One formula that turns vague AI answers into exactly what you need. Enter your email and it lands in your inbox instantly.</p>
       </div>
 
+      <!-- RCTF FEATURE CARD -->
       <div style="max-width:780px; margin:0 auto; background:#fff; border:1px solid var(--gray); border-radius:20px; overflow:hidden; box-shadow:0 8px 32px rgba(27,58,107,.10);">
+
+        <!-- top banner -->
         <div class="rctf-banner" style="background:linear-gradient(135deg,var(--navy-dark),var(--navy-mid)); padding:40px 48px; display:flex; align-items:center; gap:40px; flex-wrap:wrap;">
           <div style="flex:1; min-width:220px;">
             <span style="background:var(--gold);color:var(--navy-dark);font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;padding:4px 12px;border-radius:99px;">Free · Instant Download</span>
             <h3 style="color:#fff;font-size:28px;font-weight:900;letter-spacing:-0.5px;margin:14px 0 10px;line-height:1.15;">The RCTF Prompt Formula</h3>
             <p style="color:rgba(255,255,255,.65);font-size:15px;line-height:1.6;margin:0;">The one-page cheat sheet that shows you exactly how to talk to AI, so it gives you useful answers, every time.</p>
           </div>
+          <!-- formula preview boxes -->
           <div style="display:flex;gap:8px;flex-shrink:0;">
             <div style="background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.2);border-radius:10px;padding:14px 16px;text-align:center;min-width:52px;">
               <div style="font-size:22px;font-weight:900;color:var(--gold);line-height:1;">R</div>
@@ -925,6 +1074,8 @@
             </div>
           </div>
         </div>
+
+        <!-- bottom: what you get + form -->
         <div style="padding:32px 48px; display:flex; align-items:center; gap:40px; flex-wrap:wrap;">
           <div style="flex:1; min-width:200px;">
             <p style="font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:.07em;color:var(--muted);margin-bottom:14px;">What you get:</p>
@@ -943,9 +1094,10 @@
               </li>
             </ul>
           </div>
+          <!-- inline signup -->
           <div style="flex:1;min-width:240px;">
             <form name="rctf-signup" method="POST" data-netlify="true" netlify-honeypot="bot-field"
-              action="./thank-you.html"
+              action="/thank-you.html"
               style="display:flex;flex-direction:column;gap:10px;">
               <input type="hidden" name="form-name" value="rctf-signup" />
               <input type="hidden" name="bot-field" />
@@ -960,6 +1112,7 @@
             </form>
           </div>
         </div>
+
       </div>
     </div>
   </section>
@@ -970,7 +1123,9 @@
 
       <div class="about-photo-wrap">
         <div class="about-photo">
-          <img src="./claudine_photo.png" alt="Claudine Fle, AI Speaker and Business Educator, St. Petersburg Florida" />
+          <!-- STEP: rename your photo file to claudine_photo.png and upload it
+               to the same folder as this HTML file before deploying to Netlify -->
+          <img src="claudine_photo.png" alt="Claudine Fle, AI Speaker and Business Educator" onerror="this.style.display='none'; this.parentElement.innerHTML='<span class=about-photo-fallback>👩‍💼</span>'" />
         </div>
         <div class="about-accent">MBA, George Washington<br/>25 Years in Business</div>
       </div>
@@ -987,7 +1142,7 @@
           <div class="cred"><span class="cred-icon">🎤</span> AI Speaker &amp; Business Educator</div>
           <div class="cred"><span class="cred-icon">🌍</span> 25 Years International Business</div>
         </div>
-        <a href="#join" class="btn btn-navy">Book a Workshop or Start Free →</a>
+        <a href="https://calendly.com/claudinefle01/30min" target="_blank" rel="noopener" class="btn btn-navy">Book a Free Discovery Call →</a>
       </div>
 
     </div>
@@ -997,7 +1152,7 @@
   <section class="testimonials">
     <div class="container">
       <div class="section-head">
-        <span class="tag-light">Real results · Google Reviews</span>
+        <span class="tag-light">Real results</span>
         <h2>What people say after one session.</h2>
         <p>From business owners to whole teams. Here's what changes.</p>
       </div>
@@ -1005,51 +1160,41 @@
 
         <div class="testi">
           <div class="stars">★★★★★</div>
-          <blockquote>"We brought Claudine in for a half-day team workshop. Three weeks later, half the team is using AI daily. That's a real shift."</blockquote>
+          <blockquote>"Great workshop! This session opened my eyes to how much more AI can do for my personal life and my business. The AI audit was fascinating. I left with practical tools I can use immediately."</blockquote>
           <div class="testi-author">
-            <div class="testi-avatar">J</div>
+            <div class="testi-avatar">F</div>
             <div>
-              <p class="testi-name">James R.</p>
-              <p class="testi-role">Operations Director, Mid-Size Firm</p>
+              <p class="testi-name">Fabiana B.</p>
+              <p class="testi-role">Workshop Participant</p>
             </div>
           </div>
         </div>
 
         <div class="testi">
           <div class="stars">★★★★★</div>
-          <blockquote>"I was 58 and terrified of AI. After two lessons I was using it to write listing descriptions. The fear just went away."</blockquote>
-          <div class="testi-author">
-            <div class="testi-avatar">D</div>
-            <div>
-              <p class="testi-name">David M.</p>
-              <p class="testi-role">Real Estate Agent, 20+ years</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="testi">
-          <div class="stars">★★★★★</div>
-          <blockquote>"Finally. No hype, no jargon, no 'top 10 tools' nonsense. Just clear skills I could use the same day. That's what I needed."</blockquote>
+          <blockquote>"I work full time and had zero time to figure out AI on my own. I learned how to draft emails, summarize documents, and prep for meetings in a fraction of the time. I save four to five hours a week now."</blockquote>
           <div class="testi-author">
             <div class="testi-avatar">S</div>
             <div>
-              <p class="testi-name">Sofia K.</p>
-              <p class="testi-role">Small Business Owner</p>
+              <p class="testi-name">Sonia G.</p>
+              <p class="testi-role">Full-Time Professional</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="testi">
+          <div class="stars">★★★★★</div>
+          <blockquote>"I manage social media for several clients. After Claudine's sessions I completely changed how I work. I cut my content creation time in half. She showed us practical steps, not theory."</blockquote>
+          <div class="testi-author">
+            <div class="testi-avatar">S</div>
+            <div>
+              <p class="testi-name">Sasha W.</p>
+              <p class="testi-role">Social Media Manager</p>
             </div>
           </div>
         </div>
 
       </div>
-
-      <div style="text-align:center;margin-top:40px;">
-        <a href="./reviews.html"
-           style="display:inline-block;color:rgba(255,255,255,.55);font-size:14px;font-weight:600;text-decoration:none;border:1px solid rgba(255,255,255,.2);padding:10px 28px;border-radius:99px;transition:color .15s,border-color .15s;"
-           onmouseover="this.style.color='var(--gold)';this.style.borderColor='var(--gold)'"
-           onmouseout="this.style.color='rgba(255,255,255,.55)';this.style.borderColor='rgba(255,255,255,.2)'">
-          Read all 7 reviews →
-        </a>
-      </div>
-
     </div>
   </section>
 
@@ -1058,13 +1203,13 @@
     <div class="container">
       <h2>Get the RCTF Formula. Free.</h2>
       <p>Enter your email. Get the one-page cheat sheet that makes AI actually work for you. That's it.</p>
-      <form class="email-form" name="rctf-signup-cta" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="./thank-you.html">
+      <form class="email-form" name="rctf-signup-cta" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/thank-you.html">
         <input type="hidden" name="form-name" value="rctf-signup-cta" />
         <input type="hidden" name="bot-field" />
         <input type="email" name="email" placeholder="your@email.com" required />
         <button type="submit">Send My Free Lesson →</button>
       </form>
-      <p style="margin-top:16px;font-size:13px;color:rgba(15,35,71,.45);">No spam. No credit card. Unsubscribe anytime.</p>
+      <p style="margin-top:16px;font-size:13px;color:rgba(255,255,255,.35);">No spam. No credit card. Unsubscribe anytime.</p>
     </div>
   </section>
 
@@ -1072,21 +1217,18 @@
   <div class="gold-bar"></div>
   <footer>
     <div class="container inner">
-      <a href="#" class="logo">Claudine<span>AI</span>.com</a>
+      <a href="/" class="logo"><img src="/logo.png" alt="ClaudineAI" style="height:38px;width:auto;display:block;" onerror="this.style.display='none';this.nextSibling.style.display='inline'"/><span style="display:none;">Claudine<span style="color:var(--gold);">AI</span></span></a>
       <nav>
         <ul>
-          <li><a href="#">Lessons</a></li>
-          <li><a href="#">Workshops</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="./reviews.html">Reviews</a></li>
-          <li><a href="#">Privacy</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><a href="/#courses">Free Lesson</a></li>
+          <li><a href="/workshops.html">Workshops</a></li>
+          <li><a href="/blog/">Blog</a></li>
+          <li><a href="/reviews.html">Reviews</a></li>
+          <li><a href="/contact.html">Contact</a></li>
         </ul>
       </nav>
-      <p>© 2026 ClaudineAI · AI in plain language.</p>
-    </div>
-    <div class="container" style="margin-top:16px;padding-bottom:4px;border-top:1px solid rgba(255,255,255,.06);padding-top:16px;text-align:center;">
-      <p style="color:rgba(255,255,255,.25);font-size:13px;line-height:1.6;">Based in St. Petersburg, Florida · ClaudineAI provides practical AI workshops for businesses, teams, chambers of commerce, and professionals across Tampa Bay and virtually nationwide.</p>
+      <p>© 2026 ClaudineAI · AI in plain language.<br/>
+      <span style="font-size:12px;">Based in St. Petersburg, FL · Serving Tampa Bay &amp; Virtually Nationwide · <a href="mailto:claudine@claudineai.com" style="color:rgba(255,255,255,.4);">claudine@claudineai.com</a></span></p>
     </div>
   </footer>
 

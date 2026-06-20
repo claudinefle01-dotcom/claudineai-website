@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The RCTF Prompt Formula: Stop Getting Useless AI Answers | ClaudineAI</title>
+  <meta name="description" content="The RCTF Prompt Formula is a four-part system that makes AI give you useful, specific answers every time. Here's exactly how it works — with real examples you can try in two minutes." />
+  <link rel="canonical" href="https://claudineai.com/blog/rctf-prompt-formula.html" />
+  <meta property="og:title" content="The RCTF Prompt Formula: Stop Getting Useless AI Answers" />
+  <meta property="og:description" content="Role, Context, Task, Format. Four parts that change everything about how AI responds to you." />
+  <meta property="og:url" content="https://claudineai.com/blog/rctf-prompt-formula.html" />
+  <meta property="og:image" content="https://claudineai.com/claudine_photo.png" />
+  <link rel="icon" type="image/png" href="/claudine_photo.png" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "The RCTF Prompt Formula: Stop Getting Useless AI Answers",
+    "description": "The RCTF Prompt Formula — Role, Context, Task, Format — is a four-part system for getting specific, useful answers from AI every time.",
+    "url": "https://claudineai.com/blog/rctf-prompt-formula.html",
+    "image": "https://claudineai.com/claudine_photo.png",
+    "datePublished": "2026-06-01",
+    "dateModified": "2026-06-20",
+    "author": { "@type": "Person", "name": "Claudine Fle", "url": "https://claudineai.com/" },
+    "publisher": { "@type": "Organization", "name": "ClaudineAI", "url": "https://claudineai.com/" },
+    "keywords": ["RCTF prompt formula", "how to prompt AI", "AI prompt tips", "AI for business owners", "beginner AI prompting"]
+  }
+  </script>
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: 'Inter', sans-serif; background: #F5F7FA; color: #1C2B4A; line-height: 1.7; }
+    :root {
+      --navy: #1a4a8a; --navy-dark: #0d2d5e; --navy-mid: #1e5fa8;
+      --gold: #f7a800; --gold-light: #f9c54e; --gold-pale: #FDF3DC;
+      --gray: #E4E9F2; --muted: #5E7298;
+    }
+    .container { max-width: 1100px; margin: 0 auto; padding: 0 28px; }
+    .post-container { max-width: 740px; margin: 0 auto; padding: 0 28px; }
+    nav { position: sticky; top: 0; z-index: 100; background: var(--navy-dark); border-bottom: 1px solid rgba(255,255,255,.08); padding: 16px 0; }
+    nav .inner { display: flex; align-items: center; justify-content: space-between; }
+    .logo { font-size: 22px; font-weight: 900; color: #fff; text-decoration: none; }
+    .logo span { color: var(--gold); }
+    nav ul { display: flex; gap: 32px; list-style: none; }
+    nav ul a { color: rgba(255,255,255,.65); text-decoration: none; font-weight: 500; font-size: 15px; }
+    nav ul a:hover { color: var(--gold); }
+    .nav-cta { background: var(--gold); color: var(--navy-dark); padding: 10px 22px; border-radius: 8px; font-weight: 700; font-size: 14px; text-decoration: none; }
+    .gold-bar { height: 4px; background: var(--gold); }
+    .post-hero { background: linear-gradient(160deg, var(--navy-dark) 0%, var(--navy) 100%); padding: 64px 0 56px; }
+    .post-cat { display: inline-block; background: var(--gold); color: var(--navy-dark); font-size: 11px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; padding: 4px 12px; border-radius: 99px; margin-bottom: 18px; }
+    .post-hero h1 { font-size: clamp(28px, 4vw, 46px); font-weight: 900; color: #fff; letter-spacing: -1px; line-height: 1.15; margin-bottom: 16px; }
+    .post-meta { color: rgba(255,255,255,.5); font-size: 14px; }
+    .post-body { padding: 64px 0 80px; }
+    .post-body h2 { font-size: 24px; font-weight: 800; color: var(--navy-dark); margin: 40px 0 14px; }
+    .post-body h3 { font-size: 19px; font-weight: 700; color: var(--navy-dark); margin: 28px 0 10px; }
+    .post-body p { font-size: 17px; color: #2C3E6B; line-height: 1.75; margin-bottom: 20px; }
+    .post-body ul, .post-body ol { padding-left: 24px; margin-bottom: 20px; }
+    .post-body li { font-size: 16px; color: #2C3E6B; line-height: 1.7; margin-bottom: 8px; }
+    .rctf-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; margin: 32px 0; }
+    .rctf-box { background: var(--navy-dark); border-radius: 12px; padding: 20px 16px; text-align: center; }
+    .rctf-letter { font-size: 32px; font-weight: 900; color: var(--gold); line-height: 1; margin-bottom: 6px; }
+    .rctf-word { font-size: 11px; font-weight: 700; color: rgba(255,255,255,.5); letter-spacing: .08em; text-transform: uppercase; margin-bottom: 8px; }
+    .rctf-desc { font-size: 12px; color: rgba(255,255,255,.7); line-height: 1.5; }
+    .example-block { background: #fff; border: 1px solid var(--gray); border-radius: 12px; padding: 24px; margin: 24px 0; }
+    .example-label { font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: .08em; color: var(--muted); margin-bottom: 10px; }
+    .example-block p { font-size: 15px; color: var(--navy-dark); line-height: 1.6; margin: 0; font-style: italic; }
+    .callout { background: var(--gold-pale); border-left: 4px solid var(--gold); border-radius: 0 10px 10px 0; padding: 20px 24px; margin: 28px 0; }
+    .callout p { margin: 0; font-size: 16px; color: var(--navy-dark); font-weight: 600; }
+    .cta-box { background: linear-gradient(135deg, var(--navy-dark), var(--navy)); border-radius: 16px; padding: 36px; text-align: center; margin: 48px 0; }
+    .cta-box h3 { color: #fff; font-size: 22px; font-weight: 800; margin-bottom: 10px; }
+    .cta-box p { color: rgba(255,255,255,.65); font-size: 15px; margin-bottom: 20px; }
+    .cta-box a { display: inline-block; background: var(--gold); color: var(--navy-dark); font-weight: 700; font-size: 15px; padding: 13px 28px; border-radius: 8px; text-decoration: none; }
+    .related { background: #fff; border: 1px solid var(--gray); border-radius: 16px; padding: 32px; margin-top: 56px; }
+    .related h3 { font-size: 18px; font-weight: 800; color: var(--navy-dark); margin-bottom: 16px; }
+    .related-links { display: flex; flex-direction: column; gap: 12px; }
+    .related-links a { color: var(--navy); text-decoration: none; font-weight: 600; font-size: 15px; }
+    .related-links a:hover { color: var(--gold); }
+    footer { padding: 40px 0 28px; background: var(--navy-dark); }
+    footer .inner { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 16px; }
+    footer p { color: rgba(255,255,255,.3); font-size: 14px; }
+    footer nav ul { display: flex; gap: 24px; list-style: none; }
+    footer nav ul a { color: rgba(255,255,255,.4); font-size: 14px; text-decoration: none; }
+    footer nav ul a:hover { color: var(--gold); }
+    @media (max-width: 700px) { .rctf-grid { grid-template-columns: repeat(2, 1fr); } nav ul { display: none; } }
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="container inner">
+      <a href="/" class="logo"><img src="/logo.png" alt="ClaudineAI" style="height:38px;width:auto;display:block;" onerror="this.style.display='none';this.nextSibling.style.display='inline'"/><span style="display:none;">Claudine<span style="color:var(--gold);">AI</span></span></a>
+      <ul>
+        <li><a href="/workshops.html">Workshops</a></li>
+        <li><a href="/blog/">Blog</a></li>
+        <li><a href="/reviews.html">Reviews</a></li>
+        <li><a href="/#about">About</a></li>
+      </ul>
+      <a href="/contact.html" class="nav-cta">Book a Workshop →</a>
+    </div>
+  </nav>
+  <div class="gold-bar"></div>
+
+  <div class="post-hero">
+    <div class="post-container">
+      <span class="post-cat">Prompting</span>
+      <h1>The RCTF Prompt Formula: Stop Getting Useless AI Answers</h1>
+      <p class="post-meta">By Claudine Fle · June 2026 · 6 min read</p>
+    </div>
+  </div>
+
+  <div class="post-body">
+    <div class="post-container">
+
+      <p>Here's what most people do when they try AI for the first time: they open ChatGPT, type something like "help me write a proposal," get back something generic and slightly off, and decide AI isn't that useful.</p>
+
+      <p>The problem isn't the AI. The problem is the prompt.</p>
+
+      <p>A vague question gets a vague answer. Every time. The RCTF Prompt Formula fixes that — it's a four-part system that gives AI exactly what it needs to give you something actually useful.</p>
+
+      <h2>What RCTF stands for</h2>
+
+      <div class="rctf-grid">
+        <div class="rctf-box">
+          <div class="rctf-letter">R</div>
+          <div class="rctf-word">Role</div>
+          <div class="rctf-desc">Tell AI who it should be</div>
+        </div>
+        <div class="rctf-box">
+          <div class="rctf-letter">C</div>
+          <div class="rctf-word">Context</div>
+          <div class="rctf-desc">Give it the background it needs</div>
+        </div>
+        <div class="rctf-box">
+          <div class="rctf-letter">T</div>
+          <div class="rctf-word">Task</div>
+          <div class="rctf-desc">Tell it exactly what to do</div>
+        </div>
+        <div class="rctf-box">
+          <div class="rctf-letter">F</div>
+          <div class="rctf-word">Format</div>
+          <div class="rctf-desc">Specify how you want the output</div>
+        </div>
+      </div>
+
+      <p>Each part does a specific job. Together, they transform AI from frustrating to genuinely useful.</p>
+
+      <h2>Breaking it down</h2>
+
+      <h3>R — Role</h3>
+      <p>AI doesn't know who you need it to be. Tell it. "You are an experienced sales copywriter." "You are a business consultant with 20 years in retail." "You are a plain-language editor." The role shapes everything that follows — the tone, the assumptions, the expertise it draws on.</p>
+
+      <h3>C — Context</h3>
+      <p>This is the part most people skip. Give AI the background: Who are you? Who is the audience? What's the situation? The more specific you are here, the more specific and useful the output will be. Think of it like briefing a really smart assistant who just walked in the room and knows nothing about your business yet.</p>
+
+      <h3>T — Task</h3>
+      <p>Be direct and specific. Not "help me with my email" but "write a follow-up email to a potential client who attended our event last Thursday but hasn't responded to my initial outreach." Specificity is the difference between something you can use and something you have to rewrite from scratch.</p>
+
+      <h3>F — Format</h3>
+      <p>Tell AI how you want the answer delivered. A bulleted list. Three short paragraphs. A table. Under 150 words. In a casual tone. Whatever the output needs to look like for how you'll actually use it — say so.</p>
+
+      <h2>A before and after example</h2>
+
+      <div class="example-block">
+        <p class="example-label">❌ Without RCTF</p>
+        <p>"Write me a follow-up email."</p>
+      </div>
+
+      <div class="example-block">
+        <p class="example-label">✅ With RCTF</p>
+        <p>"You are an experienced business development professional [Role]. I met Sarah Chen at a chamber of commerce networking event last Thursday. She expressed interest in our HR consulting services for her 30-person company but hasn't responded to my email from Friday [Context]. Write a brief follow-up email that's warm but professional, references our conversation, and suggests a 20-minute call next week [Task]. Keep it under 120 words and write in a conversational, not salesy tone [Format]."</p>
+      </div>
+
+      <p>The second prompt takes 30 seconds longer to write. The output is ready to send.</p>
+
+      <div class="callout">
+        <p>💡 You don't need all four parts every time. But the more of them you include, the better your result. Start with Task if you're in a hurry — then add the others as you get comfortable.</p>
+      </div>
+
+      <h2>Why this matters more than any specific AI tool</h2>
+
+      <p>People ask me constantly which AI tool is best. ChatGPT, Claude, Gemini, Copilot — the answer changes every few months. But the RCTF formula works with all of them, today and next year.</p>
+
+      <p>Good prompting is a portable skill. Once you have it, it doesn't matter which tool your company uses or what new ones come out. You already know how to get results.</p>
+
+      <p>That's why I teach the formula in every workshop. It's the one thing people say changed how they use AI — not just during the session, but every day after.</p>
+
+      <div class="cta-box">
+        <h3>Get the RCTF cheat sheet — free</h3>
+        <p>One-page PDF. The formula, an example, and how to use it today. No tech knowledge needed.</p>
+        <a href="/#courses">Send Me the Free Cheat Sheet →</a>
+      </div>
+
+      <div class="related">
+        <h3>Keep reading</h3>
+        <div class="related-links">
+          <a href="/blog/ai-for-small-business.html">→ AI for Small Business Owners: What Actually Works in 2026</a>
+          <a href="/blog/ai-workshops-tampa-bay.html">→ AI Workshops in Tampa Bay: What to Expect</a>
+          <a href="/blog/learn-ai-no-tech-background.html">→ How to Learn AI With No Tech Background</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="gold-bar"></div>
+  <footer>
+    <div class="container inner">
+      <a href="/" class="logo"><img src="/logo.png" alt="ClaudineAI" style="height:38px;width:auto;display:block;" onerror="this.style.display='none';this.nextSibling.style.display='inline'"/><span style="display:none;">Claudine<span style="color:var(--gold);">AI</span></span></a>
+      <nav>
+        <ul>
+          <li><a href="/blog/">Blog</a></li>
+          <li><a href="/workshops.html">Workshops</a></li>
+          <li><a href="/reviews.html">Reviews</a></li>
+          <li><a href="/contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <p>© 2026 ClaudineAI · AI in plain language.</p>
+    </div>
+  </footer>
+</body>
+</html>
