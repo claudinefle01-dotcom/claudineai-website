@@ -599,6 +599,19 @@
     /* ── DIVIDER ── */
     .gold-bar { height: 4px; background: var(--gold); }
 
+    /* ── OFFERINGS LAYOUT ── */
+    #offerings { scroll-margin-top: 80px; }
+    .offer-card { display: flex; flex-direction: column; height: 100%; min-width: 0; }
+    .offer-cta { margin-top: auto; }
+    .offer-cta p { min-height: calc(2 * 1.7em); }
+    .stats-strip > div { min-width: 0; }
+    .stats-strip > div > div:first-child { white-space: nowrap; }
+    /* featured card has a 2px border, so match its offset for level buttons */
+    .offer-card:first-child .offer-cta { padding-bottom: 37px !important; }
+    @media (min-width: 901px) and (max-width: 1060px) {
+      .stats-strip { grid-template-columns: repeat(2, 1fr) !important; }
+    }
+
     /* ── RESPONSIVE ── */
     @media (max-width: 900px) {
       .hero-inner     { grid-template-columns: 1fr; }
@@ -615,6 +628,8 @@
     @media (max-width: 640px) {
       .offering-grid  { grid-template-columns: 1fr !important; }
       .stats-strip    { grid-template-columns: repeat(2, 1fr) !important; }
+      .proof-grid     { grid-template-columns: repeat(2, 1fr) !important; }
+      footer nav ul   { flex-wrap: wrap; }
       .rctf-banner    { flex-direction: column; }
       .rctf-body      { flex-direction: column; }
       .hero h1        { font-size: 32px; letter-spacing: -1px; }
@@ -796,7 +811,7 @@
   <!-- ─── SOCIAL PROOF BAR ─── -->
   <section style="padding:48px 0; background:var(--offwhite); border-top:1px solid var(--gray); border-bottom:1px solid var(--gray);">
     <div class="container">
-      <div style="display:grid; grid-template-columns:repeat(4,1fr); gap:24px; text-align:center;">
+      <div class="proof-grid" style="display:grid; grid-template-columns:repeat(4,1fr); gap:24px; text-align:center;">
         <div>
           <div style="font-size:36px;font-weight:900;color:var(--navy-dark);letter-spacing:-1px;">25+</div>
           <div style="font-size:14px;color:var(--muted);font-weight:500;margin-top:4px;">Years in Business</div>
@@ -828,10 +843,10 @@
       </div>
 
       <!-- OFFERING CARDS WRAPPER -->
-      <div class="offering-grid" style="display:grid; grid-template-columns:1fr 1fr 1fr; gap:28px; align-items:start;">
+      <div class="offering-grid" style="display:grid; grid-template-columns:1fr 1fr; gap:28px; align-items:stretch;">
 
         <!-- ── CARD 1: 60-MIN SESSION ── -->
-        <div style="border:1px solid var(--gray); border-radius:20px; overflow:hidden; background:#fff; box-shadow:0 4px 24px rgba(27,58,107,.07); transition:box-shadow .2s;">
+        <div class="offer-card" style="border:1px solid var(--gray); border-radius:20px; overflow:hidden; background:#fff; box-shadow:0 4px 24px rgba(27,58,107,.07); transition:box-shadow .2s;">
 
           <!-- header -->
           <div style="background:linear-gradient(135deg,var(--navy-dark),var(--navy)); padding:32px 36px;">
@@ -882,7 +897,7 @@
           </div>
 
           <!-- CTA -->
-          <div style="padding:28px 36px 36px;">
+          <div class="offer-cta" style="padding:28px 36px 36px;">
             <a href="https://calendly.com/claudinefle01/30min" target="_blank" rel="noopener"
                style="display:block;text-align:center;background:var(--navy);color:#fff;font-weight:700;font-size:16px;padding:16px 24px;border-radius:10px;text-decoration:none;transition:background .15s;"
                onmouseover="this.style.background='var(--navy-mid)'" onmouseout="this.style.background='var(--navy)'">
@@ -893,13 +908,13 @@
         </div>
 
         <!-- ── CARD 2: 4-HR COURSE ── -->
-        <div style="border:2px solid var(--gold);border-radius:20px;overflow:hidden;background:#fff;box-shadow:0 4px 24px rgba(232,160,32,.15);">
+        <div class="offer-card" style="border:2px solid var(--gold);border-radius:20px;overflow:hidden;background:#fff;box-shadow:0 4px 24px rgba(232,160,32,.15);">
 
           <!-- header -->
           <div style="background:var(--gold);padding:8px 36px;display:flex;align-items:center;justify-content:center;">
             <span style="font-size:12px;font-weight:700;color:var(--navy-dark);letter-spacing:.06em;text-transform:uppercase;">Most Popular · Full Team Training</span>
           </div>
-          <div style="background:linear-gradient(135deg,var(--navy-dark),var(--navy-mid));padding:28px 36px 32px;">
+          <div style="background:linear-gradient(135deg,var(--navy-dark),var(--navy-mid));padding:32px 36px;">
             <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:16px;flex-wrap:wrap;gap:10px;">
               <span style="background:rgba(255,255,255,.15);color:#fff;font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;padding:4px 14px;border-radius:99px;">4 Modules · 4 Hours · Or 1-Hr Lunch &amp; Learn</span>
               <span style="color:rgba(255,255,255,.45);font-size:13px;font-weight:500;">AI Without the Tech Headache</span>
@@ -968,7 +983,7 @@
           </div>
 
           <!-- CTA -->
-          <div style="padding:28px 36px 36px;">
+          <div class="offer-cta" style="padding:28px 36px 36px;">
             <a href="https://calendly.com/claudinefle01/30min" target="_blank" rel="noopener"
                style="display:block;text-align:center;background:var(--gold);color:var(--navy-dark);font-weight:700;font-size:16px;padding:16px 24px;border-radius:10px;text-decoration:none;transition:background .15s;"
                onmouseover="this.style.background='var(--gold-light)'" onmouseout="this.style.background='var(--gold)'">
